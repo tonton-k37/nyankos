@@ -1,0 +1,10 @@
+version: '3'
+services:
+  grub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: grub-centkun
+    tty: true
+    volumes:
+      - ./src:/home
